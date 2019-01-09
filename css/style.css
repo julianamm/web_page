@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700|Roboto:100,300,400,500,700|Viga');
+
+/* 
+Colors:
+Moon Yellow:    #f4c613
+Grey:           #212226
+White Smoke:    #f4f4f4
+White:          #fff 
+black:          #000
+*/
+
+/* Html, Body */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Preloader */
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+#status {
+    background-image: url("../img/preloader/loading.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -90px;
+
+}
