@@ -10,17 +10,55 @@
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>JuJu de Morais</h1>
-
     <!-- preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
+
+    <section id="home">
+        <video id="home-bg-video" poster="video/home/purple_art.jpg" autoplay loop muted>
+            <source src="video/home/purple_art.mp4" type="video/mp4">
+            <source src="video/home/purple_art.ogv" type="video/ogv">
+            <source src="video/home/purple_art.webm" type="video/webm">
+        </video>
+
+        <!-- Overlay -->
+        <div id="home-overlay"></div>
+
+        <!-- Home content -->
+        <div id="home-content">
+                <h1><a href="#home" id="home-initials">JuJu de Morais</a></h1>
+            <div id="home-content-inner">
+                <div id="home-heading">
+                    <h1 id="home-heading-1">A Maker</h1><br>
+                    <h1 id="home-heading-2"><span class="heading-sm"> of</span><span>things</span></h1>
+                </div>
+
+                <div id="home-text">
+                    <p>by things, I mean web applications with an eye towards design.</p>
+                </div>
+
+                <div id="home-btn" class="">
+                    <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Start
+                        Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow Down -->
+        <a href="#about" id="arrow-down">
+            <i class="fas fa-angle-down"></i>
+        </a>
+    </section>
+    <!-- Home Ends-->
+
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

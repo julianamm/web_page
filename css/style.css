@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700|Roboto:100,300,400,500,700|Viga');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700|Cutive+Mono|Roboto:100,300,400,500,700|Viga');
 
 /* 
 Colors:
 Moon Yellow:    #f4c613
+Flat Yellow:    #ffe066
 Grey:           #212226
 White Smoke:    #f4f4f4
 White:          #fff 
-black:          #000
+Black:          #000
+Dark purple     #32093c
 */
 
 /* Html, Body */
@@ -16,7 +18,7 @@ body {
 }
 
 body {
-    color: #212226;
+    color: #32093c;
 }
 
 h1,
@@ -64,4 +66,172 @@ section {
     left: 50%;
     margin: -90px;
 
+}
+
+/* Home */
+#home {
+    background: none;
+    height: 100%;
+}
+
+#home-bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url("../video/home/purple_art.jpg") no-repeat;
+    background-size: cover;
+}
+
+#home-overlay {
+    /* background-color: rgba(25, 25, 25, 0.7); */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+    
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+#home-initials {
+    padding: 20px 10px 20px 65px;
+    font-family: 'Viga', sans-serif;
+    color: #32093c;
+    text-decoration: none;
+}
+
+#home-heading {
+    position: relative;
+}
+
+#home-heading h1 {
+    font-family: 'Cutive Mono', sans-serif;
+    color: #32093c;
+    font-size: 6em;
+    font-weight: 600;
+    margin: 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#home-heading h1 span.heading-sm {
+    color: #32093c;
+    text-transform: lowercase;
+    text-decoration-line: underline;
+    font-size: 60px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+#home-heading h1 span {
+    color: #ffe066;
+    font-size: 100px;
+    position: absolute;
+    top: 65px;
+    left: 150px;
+}
+
+#home-text p {
+    color: #212226;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 90px 0 30px 0;;
+}
+
+/* Buttons */
+#home-btn {
+    position: relative;
+}
+
+.btn-general {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #32093c;
+    border: 1px solid #32093c;
+    position: absolute;
+    top: 50%;
+    left: 15%
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #212226;
+    font-weight: 500;
+    background-color: #ffe066;
+    border: 1px solid #ffe066;
+}
+
+.btn-yellow {
+    color: #fff;
+    border: 1px solid #ffe066;
+    background-color: #ffe066;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: #32093c;
+    border: 1px solid #32093c;
+}
+
+.btn-white {
+    color: #32093c;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    color: #fff;
+    background-color: #32093c;
+    border: 1px solid #32093c;
+}
+
+/* Arrow Down */
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    color: #32093c;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #f4c613;
 }
