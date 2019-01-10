@@ -486,3 +486,141 @@ section {
     font-family: "Raleway", sans-serif;
     margin-top: 8px;
 }
+
+/* ====================
+    Drawings
+======================= */
+#drawings {
+    padding-bottom: 160px;
+}
+
+#drawings .vertical-heading {
+    margin-bottom: 50px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding: 0;
+}
+
+.drawings-item {
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
+
+/* Filters CSS */
+#isotope-filters {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
+
+#isotope-filters button {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-right: 35px;
+    outline: 0;
+}
+
+#isotope-filters button span {
+    display: block;
+    padding-bottom: 5px;
+    -webkit-transition: border-color .4s ease-in-out;
+    transition: border-color .4s ease-in-out;
+}
+
+#isotope-filters button.active span {
+    color: #f4c613;
+    border-bottom: 3px solid #f4c613;
+}
+
+/* Zoom Effect */
+.drawings-item img {
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.drawings-item:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Overlay Effect */
+.drawings-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 17, 0.8);
+    cursor: -webkit-pointer;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Item Details Effect */
+.drawings-item-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.drawings-item-details h3 {
+    color: #f4c613;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.drawings-item-details span {
+    display: inline-block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 30px;
+    height: 6px;
+    margin: 11px auto 5px auto;
+}
+
+.drawings-item-details p {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* Show Overlay on mouse over */
+.drawings-item:hover .drawings-item-details h3 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.drawings-item:hover .drawings-item-details p {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.drawings-item:hover .drawings-item-overlay {
+    opacity: 1;
+}
