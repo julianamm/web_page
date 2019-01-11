@@ -9,6 +9,7 @@ White Smoke:    #f4f4f4
 White:          #fff 
 Black:          #000
 Dark purple     #32093c
+Lavender        #905bb5
 */
 
 /* ====================
@@ -118,21 +119,14 @@ section {
 
 }
 
-#home-initials {
-    padding: 20px 10px 20px 65px;
-    font-family: 'Viga', sans-serif;
-    color: #32093c;
-    text-decoration: none;
-}
-
-#home-heading {
+div#home-heading {
     position: relative;
 }
 
 #home-heading h1 {
     font-family: 'Cutive Mono', sans-serif;
-    color: #32093c;
-    font-size: 6em;
+    color: #b497e5;
+    font-size: 7.5em;
     font-weight: 600;
     margin: 0;
     display: inline-block;
@@ -140,30 +134,28 @@ section {
 }
 
 #home-heading h1 span.heading-sm {
-    color: #32093c;
+    color: #b497e5;
     text-transform: lowercase;
     text-decoration-line: underline;
-    font-size: 60px;
-    letter-spacing: 0;
+    font-size: 70px;
     position: absolute;
-    top: 60px;
-    left: 50px;
+    top: 53%;
+    left: 44%;
 }
 
 #home-heading h1 span {
     color: #ffe066;
-    font-size: 100px;
+    font-size: 1.2em;
     position: absolute;
-    top: 65px;
-    left: 150px;
+    top: 47%;
+    left: 50%;
 }
 
 #home-text p {
     color: #212226;
     font-size: 25px;
     font-weight: 300;
-    margin: 90px 0 30px 0;
-    ;
+    margin: 60px 0;
 }
 
 /* ====================
@@ -189,7 +181,7 @@ section {
     border: 1px solid #32093c;
     position: absolute;
     top: 50%;
-    left: 15%
+    left: 45%
 }
 
 .btn-home:hover,
@@ -200,14 +192,14 @@ section {
     border: 1px solid #ffe066;
 }
 
-.btn-yellow {
+.btn-lavender {
     color: #fff;
-    border: 1px solid #ffe066;
-    background-color: #ffe066;
+    border: 1px solid #b497e5;
+    background-color: #b497e5;
 }
 
-.btn-yellow:hover,
-.btn-yellow:focus {
+.btn-lavender:hover,
+.btn-lavender:focus {
     color: #fff;
     background-color: #32093c;
     border: 1px solid #32093c;
@@ -224,6 +216,16 @@ section {
     color: #fff;
     background-color: #32093c;
     border: 1px solid #32093c;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
 }
 
 /* ====================
@@ -413,7 +415,7 @@ section {
 
 /* Hover State */
 .about-item:hover {
-    background-color: #f4c613;
+    background-color: #b497e5;
 }
 
 .about-item:hover i,
@@ -427,7 +429,6 @@ section {
 
 .about-item:hover h4 a,
 .about-item:hover ul li a {
-    color: #212226;
     font-weight: 600;
 }
 
@@ -475,15 +476,16 @@ section {
 }
 
 #tech-statement h3 {
-    color: #fff;
+    color: #32093c;
     font-size: 28px;
     line-height: 45px;
 }
 
 #tech-statement p {
-    font-size: 18px;
+    font-size: 20px;
     color: #ffe066;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
     margin-top: 8px;
 }
 
@@ -631,7 +633,7 @@ section {
 ======================= */
 
 #contact-right p {
-    font-size: 30px;
+    font-size: 38px;
     padding: 23px 5px;
 }
 
@@ -645,6 +647,10 @@ section {
     transition: all 400ms linear;
 }
 
+#contact-right a i {
+    margin: 6px;
+}
+
 #contact-right p a:hover {
     text-decoration: line-through;
 }
@@ -656,5 +662,126 @@ section {
 }
 
 #contact-right a i:hover {
-    color: #ffe066;
+    color: #b497e5;
+}
+
+/* ====================
+    Footer
+======================= */
+footer {
+    background: #212226;
+    padding: 20px;
+}
+
+footer p {
+    color: #fff;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+
+/* ====================
+    Navigation
+======================= */
+.navbar {
+    padding: 35px 0 20px 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.site-nav-wrapper {
+    padding: 0 85px;
+}
+
+a.name-logo  {
+    padding: 13px 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 37px;
+    color: #b497e5;
+    text-decoration: none;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.05);
+}
+
+a.name-logo.initials {
+    border: 4px solid #b497e5;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+ul.navbar-nav>li>a {
+    font-family: "Raleway", sans-serif;
+    color: #f4f4f4;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav>li>a:hover,
+ul.navbar-nav>li>a:focus {
+    background: none;
+    color: #f4c613;
+}
+
+/* ====================
+    White - Navigation
+======================= */
+.white-nav-top {
+    background: #fff;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav>li>a {
+    color: #212226
+}
+
+.white-nav-top ul.navbar-nav>li>a:hover,
+.white-nav-top ul.navbar-nav>li>a:focus {
+    color: #f4c613;
+}
+
+/* Scroll spy active state */
+.white-nav-top ul.navbar-nav>li.active>a {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+/* Animation Wow */
+#home-heading-1,
+#home-heading-2,
+#home-text,
+#home-btn,
+#arrow-down i {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+#home-heading-1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+#home-heading-2 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#home-text {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+#home-btn {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+#arrow-down i {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
 }
