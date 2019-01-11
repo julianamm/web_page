@@ -652,7 +652,8 @@ div#home-heading {
 }
 
 #contact-right p a:hover {
-    text-decoration: line-through;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 #contact-right a i {
@@ -663,6 +664,7 @@ div#home-heading {
 
 #contact-right a i:hover {
     color: #b497e5;
+    font-size: 47px;
 }
 
 /* ====================
