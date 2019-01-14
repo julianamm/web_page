@@ -516,8 +516,7 @@ div#home-heading {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.skill-item {
-}
+.skill-item {}
 
 .skill-item h3 {
     color: #fff;
@@ -746,14 +745,14 @@ footer p {
     padding: 0 85px;
 }
 
-a.name-logo  {
+a.name-logo {
     padding: 13px 13px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 37px;
     color: #b497e5;
     text-decoration: none;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.05);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.05);
 }
 
 a.name-logo.initials {
