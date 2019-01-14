@@ -678,6 +678,9 @@ div#home-heading {
 /* ====================
     Contact
 ======================= */
+#contact {
+    padding: 100px 0;
+}
 
 #contact-right p {
     font-size: 38px;
@@ -719,7 +722,7 @@ div#home-heading {
 ======================= */
 footer {
     background: #212226;
-    padding: 20px;
+    padding: 30px;
 }
 
 footer p {
