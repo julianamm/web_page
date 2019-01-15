@@ -536,6 +536,96 @@ div#home-heading {
 }
 
 /* ====================
+    Projects
+======================= */
+.project-item {
+    margin: 8px;
+    position: relative;
+    height: 350px;
+    width: 350px;
+}
+
+.project-item img {
+    border: 3px solid #b497e5;
+}
+
+.project-item-overlay {
+    background: rgba(33, 34, 38, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.project-item-info {
+    width: 100%;
+    height: 100%;
+    padding: 110px 0;
+}
+
+.project-item-info h6 {
+    color: #b497e5;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.project-item-info p {
+    color: #fff;
+    padding: 2px;
+}
+
+.project-item:hover .project-item-overlay {
+    opacity: 1;
+}
+
+/* Icons */
+ul.icon-list {
+    padding: 0;
+    margin-top: 0;
+}
+
+ul.icon-list li {
+    display: inline-block;
+    padding: 3px;
+}
+
+ul.icon-list li a {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+ul.icon-list a:hover {
+    color: #b497e5;
+    border-color: transparent;
+}
+
+/* Slider Buttons */
+.owl-theme .owl-nav [class*=owl-] {
+    color: #212226;
+    font-size: 40px;
+    background: none;
+    margin: 3px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: #b497e5;
+    outline: none;
+}
+
+/* ====================
     Drawings
 ======================= */
 #drawings {
