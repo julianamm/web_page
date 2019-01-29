@@ -97,7 +97,7 @@ section {
 }
 
 #home-overlay {
-    /* background-color: rgba(25, 25, 25, 0.7); */
+    /* background-color: rgba(25, 25, 25, 0.1); */
     width: 100%;
     height: 100%;
     position: fixed;
@@ -855,7 +855,7 @@ a.name-logo.initials {
 
 ul.navbar-nav>li>a {
     font-family: "Raleway", sans-serif;
-    color: #f4f4f4;
+    color: transparent;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
@@ -865,7 +865,7 @@ ul.navbar-nav>li>a {
 ul.navbar-nav>li>a:hover,
 ul.navbar-nav>li>a:focus {
     background: none;
-    color: #f4c613;
+    /* color: #f4c613; */
 }
 
 /* ====================
